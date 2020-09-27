@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+
+}
+
+.App-header {
+  .logo {
+    width: 26vw;
+  }
+}
+
+.Navbar {
+  height: 36px;
+  line-height: 36px;
+  text-align: right;
+  padding: 5px 10px 5px 5px;
+  margin-bottom: 24px;
+  position: sticky;
+  top: 0;
+
+  .menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      cursor: pointer;
+      display: inline;
+      margin-left: 26px;
+      &:hover {
+        text-shadow: rgba(0,0,0,0.2) 0 0 5px;
+      }
+    }
+  }
+}
+
+.parallax {
+  position: absolute;
+}
+.left-vector {
+  position: fixed;
+  left:0;
+  top: 0;
+  z-index: -10;
+  width: 36vw;
+  animation: fadeIn ease 1s;
+}
+.right-vector {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 36vw;
+  z-index: -10;
+  animation: fadeIn ease 1s;
+}
+
+.phone-1 {
+  position: absolute;
+  top: 500px;
+  right: 0;
+  img {
+    width: 400px;
+    transform: rotateZ(-13deg);
+  }
+  animation: fadeIn ease 1.5s;
+}
+.phone-2 {
+  position: absolute;
+  top: 1000px;
+  left: -150px;
+  img {
+    width: 400px;
+    transform: rotateZ(12deg);
+  }
+  animation: fadeIn ease 1.5s;
+}

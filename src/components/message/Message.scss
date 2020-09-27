@@ -1,0 +1,16 @@
+.Message {
+  padding: 10px;
+  animation: fadeIn ease 1s;
+  max-width: 40vw;
+}
+
+.Message-title {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.Message-parallax {
+  position: absolute;
+  left: auto;
+  margin-top: 40vh;
+}

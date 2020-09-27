@@ -1,0 +1,18 @@
+@import "../../style/colors";
+
+.Button {
+  border: 2px solid white;
+  background-color: $primary;
+  border-radius: 12px;
+  padding: 10px;
+  color: white;
+  font-family: Roboto, serif;
+  margin-top: 20px;
+  font-size: 18px;
+  box-shadow: rgba(0,0,0,0.2) 5px 5px 15px;
+
+  &:hover {
+    background-color: $secondary;
+    cursor: pointer;
+  }
+}
