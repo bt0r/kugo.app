@@ -8,9 +8,9 @@ type ButtonProps = {
 
 export const Button: React.FC<ButtonProps> = (props) => {
     return (
-        <a href={props.link} target={'_blank'}>
+        <a href={props.link} target={'_blank'} rel={'noopener noreferrer'}>
             <button className={'Button'}>
-                🚀 {props.content}
+                <span role={'img'} aria-label={'emoji-rocket'}>🚀</span> {props.content}
             </button>
         </a>
     )

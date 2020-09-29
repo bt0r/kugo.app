@@ -1,12 +1,20 @@
+@import "src/style/size";
+
 .Message {
   padding: 10px;
+  font-size: 1.5em;
+  @media (max-width: $mobile) {
+    font-size: 1em;
+  }
   animation: fadeIn ease 1s;
-  max-width: 40vw;
+
+  flex: 1;
 }
 
 .Message-title {
   font-weight: bold;
   text-transform: capitalize;
+  font-family: Roboto-Medium, serif;
 }
 
 .Message-parallax {
