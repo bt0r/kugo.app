@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import logo from '../../assets/images/logo/logo_full.png';
-import logoOnly from '../../assets/images/logo/logo.png';
 import './App.scss';
-import {Parallax} from "react-scroll-parallax/cjs";
 import {Message} from "../../components/message/Message";
 import {Button} from "../../components/button/Button";
+import {t} from '../../translations/fr';
 
 const App = () => {
     const [currentScrollHeight, setCurrentScrollHeight] = useState(0)
@@ -38,13 +37,13 @@ const App = () => {
                     link={'https://docs.google.com/forms/d/e/1FAIpQLSen7iA-YRqSJS-UnHuWmD9fLSMr8SX3P1F_Glrb7JITmfCqxg/viewform'}
                     content={'Rejoindre la beta'} />
                 <p>
-                    Kugo est une application de rencontre légère 🍃.<br />
-                    Marre des faux profils ? Besoin de légèreté ? Nous aussi et c'est pour ces raisons que nous avons
-                    fait Kugo.
+                    {t.app.description.short}
+                    <br/>
+                    {t.app.description.full}
                 </p>
                 <div className={"Stores"}>
                     <div>
-                        <b>Bientôt disponible sur Android et iOS</b>
+                        <b>{t.stores.description}</b>
                     </div>
                     <div className={"images"}>
                         <img
@@ -62,19 +61,18 @@ const App = () => {
             </header>
 
             <div className={'Messages'}>
-                <div className={'Line'}>
-                    <Message
-                        title={'Test'}
-                        content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu tellus, tincidunt a bibendum sit amet, imperdiet vehicula ante. Morbi sollicitudin nisi ex, vel gravida lectus blandit at.'} />
-                    <img className={'phone'} src={require('../../assets/images/app/swipette.png')} alt={''} />
-                </div>
-                <div className={'Line'}>
-                    <img className={'phone-reversed'} src={require('../../assets/images/app/conversation.png')} alt={''} />
-                    <Message
-                        isReversed
-                        title={'Test'}
-                        content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu tellus, tincidunt a bibendum sit amet, imperdiet vehicula ante. Morbi sollicitudin nisi ex, vel gravida lectus blandit at.'} />
-                </div>
+                {t.messages.map(message => {
+                    return (
+                        <div className={'Line'}>
+                            <Message
+                                title={message.title}
+                                content={message.content}
+                                isReversed={message.reversed}
+                                image={message.image}
+                            />
+                        </div>
+                    )
+                })}
             </div>
         </div>
     );
