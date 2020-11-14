@@ -21,36 +21,35 @@
 .Navbar {
   height: 36px;
   line-height: 36px;
-  margin-bottom: 24px;
-  position: sticky;
+  position: fixed;
   top: 0;
-  right: 0;
-  font-weight: bold;
+  left: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  z-index: 20;
 
   .menu {
-    padding: 5px 10px 5px 5px;
     margin: 0;
     list-style: none;
     max-width: 400px;
-    text-align: right;
-    background: linear-gradient(to right, transparent, transparent, rgba(255, 255, 255, 0.2) 75%);
-
+    padding-left: 10px;
+    text-align: left;
     li {
       cursor: pointer;
       display: inline;
-      margin-left: 26px;
-
       a {
         text-decoration: none;
         color: #333;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          background-color: rgba(215,108,51,.05);
+          color: #474747;
+        }
       }
 
-      &:hover {
-        text-shadow: rgba(0, 0, 0, 0.2) 0 0 5px;
-      }
+
     }
   }
 }
@@ -59,7 +58,7 @@
   position: fixed !important;
   left: -2px;
   top: 0;
-  z-index: 11;
+  z-index: -1;
   width: 16vw;
   @media (max-width: $mobile) {
     width: 36vw;
@@ -75,7 +74,7 @@
   @media (max-width: $mobile) {
     width: 36vw;
   }
-  z-index: 11;
+  z-index: -1;
   animation: fadeIn ease 1s;
 }
 
@@ -99,26 +98,29 @@
   margin: auto auto 35em;
 
   .phone {
-    z-index: -9;
+    z-index: -2;
     width: 400px;
     padding-left: 100px;
     @media (max-width: $mobile) {
-      width: 150px;
+      width: 200px;
       position: absolute;
+      padding-left: 20vw;
       opacity: 0.2 ;
     }
-    transform: rotateZ(-13deg);
+    transform: rotateZ(-11deg);
   }
 
   .phone-reversed {
     width: 400px;
     padding-right: 100px;
+    z-index: -2;
     @media (max-width: $mobile) {
-      width: 150px;
+      width: 200px;
       position: absolute;
+      padding-right: 20vw;
       opacity: 0.2;
     }
-    transform: rotateZ(13deg);
+    transform: rotateZ(11deg);
   }
 }
 .Stores {

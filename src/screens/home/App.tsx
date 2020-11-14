@@ -1,32 +1,23 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import logo from '../../assets/images/logo/logo_full.png';
 import './App.scss';
 import {Message} from "../../components/message/Message";
 import {Button} from "../../components/button/Button";
 import {t} from '../../translations/fr';
+import leftVector from '../../components/left-vector.svg';
+import rightVector from '../../components/right-vector.svg';
+import playStore from '../../assets/images/store/android.png';
+import appStore from '../../assets/images/store/ios.svg';
 
-const App = () => {
-    const [currentScrollHeight, setCurrentScrollHeight] = useState(0)
-    useEffect(() => {
-        window.addEventListener('scroll', () => setCurrentScrollHeight(document.body.scrollHeight))
-
-        return () => {
-            window.removeEventListener('scroll', () => {
-            })
-        }
-    }, [])
-
-    useEffect(() => console.log(currentScrollHeight), [currentScrollHeight])
+const App = (): JSX.Element => {
     return (
         <div>
-            <img src={require('../../components/left-vector.svg')} className={'left-vector'} alt={''} />
-            <img src={require('../../components/right-vector.svg')} className={'right-vector'} alt={''} />
+            <img src={leftVector} className={'left-vector'} alt={''} />
+            <img src={rightVector} className={'right-vector'} alt={''} />
             <nav className={'Navbar'}>
                 <ol className={'menu'}>
                     <li>
-                        <a href={'mailto:contact@kugo.app'}>
-                            <span role={"img"} aria-label={'emoji-contact'}>📨 </span>Contact
-                        </a>
+                        <a href={'mailto:contact@kugo.app'}>Contact</a>
                     </li>
                 </ol>
             </nav>
@@ -47,12 +38,12 @@ const App = () => {
                     </div>
                     <div className={"images"}>
                         <img
-                            src={require('../../assets/images/store/android.png')}
+                            src={playStore}
                             alt={"Play store"}
                             height={70}
                         />
                         <img
-                            src={require('../../assets/images/store/ios.svg')}
+                            src={appStore}
                             alt={"App store"}
                             height={50}
                         />
@@ -63,7 +54,8 @@ const App = () => {
             <div className={'Messages'}>
                 {t.messages.map(message => {
                     return (
-                        <div className={'Line'}>
+                        <div className={'Line'}
+                            key={message.title}>
                             <Message
                                 title={message.title}
                                 content={message.content}

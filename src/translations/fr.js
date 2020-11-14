@@ -11,22 +11,32 @@ export const t = {
   },
   messages: [
     {
-      title: 'Test 1',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu tellus, tincidunt a bibendum sit amet, imperdiet vehicula ante. Morbi sollicitudin nisi ex, vel gravida lectus blandit at.',
-      image: 'swipette.png',
+      title: 'Amusant !',
+      content: "Un profil te plait ? lance une 🍑 pêche pour lui montrer ton intérêt ! A l'inverse, lance-lui une 🍅" +
+          " tomate pour ne plus jamais le croiser sur l'application.",
+      image: 'swipette_male.png',
       reversed: false
     },
     {
-      title: 'Test 2',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu tellus, tincidunt a bibendum sit amet, imperdiet vehicula ante. Morbi sollicitudin nisi ex, vel gravida lectus blandit at.',
-      image: 'conversation.png',
-      reversed: true
+      title: 'Simplicité',
+      content: "Oubliez les phrases banales comme \"Tu cherches quoi ici ?\", votre profil donne déjà la couleur" +
+          " grâce à un système de badges exprimant vos envies. Alors, vous êtes plutôt à la recherche d'une" +
+          " rencontre avec standing ou plutôt go fast ?",
+      image: 'badges.png',
+      reversed: true,
     },
     {
-      title: 'Test 3',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras arcu tellus, tincidunt a bibendum sit amet, imperdiet vehicula ante. Morbi sollicitudin nisi ex, vel gravida lectus blandit at.',
-      image: 'conversation.png',
-      reversed: false,
-    }
+      title: 'Sécurisée',
+      content:  "Évitez les rencontres hasardeuses et les faux profils, sur Kugo chaque profil est vérifié.",
+      image: 'profile.png',
+      reversed: false
+    },
+    {
+      title: 'Discret',
+      content: "Besoin de discrétion afin d'éviter d'être visible par d'autres profils pendant un certains temps ?" +
+          " Kugo vous permet de choisir quand vous décidez ne plus être visible dans la recherche.",
+      image: 'spy.png',
+      reversed: true
+    },
   ]
 }

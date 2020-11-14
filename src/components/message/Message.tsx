@@ -12,9 +12,9 @@ const MessageComponent: React.FC<MessageProps> = (props) => {
     return (
         <>
             {props.isReversed && (
-                <img className={'phone-reversed'} src={require('../../assets/images/app/'+props.image)} alt={''} />
+                <img className={'phone-reversed'} src={'images/app/'+props.image} alt={''} />
             )}
-            <div className={'Message'} style={props.isReversed ? {textAlign: 'right'} : {textAlign: 'left'}}>
+            <div className={'Message'}>
                 <div className={'Message-title'}>
                     {props.title}
                 </div>
@@ -23,7 +23,7 @@ const MessageComponent: React.FC<MessageProps> = (props) => {
                 </div>
             </div>
             {!props.isReversed && (
-                <img className={'phone'} src={require('../../assets/images/app/'+props.image)} alt={''} />
+                <img className={'phone'} src={'images/app/'+props.image} alt={''} />
             )}
         </>
 

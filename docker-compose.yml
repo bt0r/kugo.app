@@ -1,0 +1,12 @@
+version: '3.6'
+services:
+  node:
+    build:
+      context: docker/node
+      dockerfile: Dockerfile
+    tty: true
+    command: npm start
+    ports:
+    - 3000:3000
+    volumes:
+    - .:/app:delegated
