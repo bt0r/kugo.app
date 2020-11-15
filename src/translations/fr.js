@@ -14,7 +14,7 @@ export const t = {
       title: 'Amusant !',
       content: "Un profil te plait ? lance une 🍑 pêche pour lui montrer ton intérêt ! A l'inverse, lance-lui une 🍅" +
           " tomate pour ne plus jamais le croiser sur l'application.",
-      image: 'swipette_male.png',
+      image: 'swipette_male.jpg',
       reversed: false
     },
     {
@@ -22,20 +22,20 @@ export const t = {
       content: "Oubliez les phrases banales comme \"Tu cherches quoi ici ?\", votre profil donne déjà la couleur" +
           " grâce à un système de badges exprimant vos envies. Alors, vous êtes plutôt à la recherche d'une" +
           " rencontre avec standing ou plutôt go fast ?",
-      image: 'badges.png',
+      image: 'badges.jpg',
       reversed: true,
     },
     {
       title: 'Sécurisée',
       content:  "Évitez les rencontres hasardeuses et les faux profils, sur Kugo chaque profil est vérifié.",
-      image: 'profile.png',
+      image: 'profile.jpg',
       reversed: false
     },
     {
       title: 'Discret',
       content: "Besoin de discrétion afin d'éviter d'être visible par d'autres profils pendant un certains temps ?" +
           " Kugo vous permet de choisir quand vous décidez ne plus être visible dans la recherche.",
-      image: 'spy.png',
+      image: 'spy.jpg',
       reversed: true
     },
   ]
