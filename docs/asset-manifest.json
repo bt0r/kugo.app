@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c4fce525.chunk.css",
-    "main.js": "/static/js/main.8fb62a56.chunk.js",
-    "main.js.map": "/static/js/main.8fb62a56.chunk.js.map",
+    "main.js": "/static/js/main.8a08caae.chunk.js",
+    "main.js.map": "/static/js/main.8a08caae.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.97ad550f.js",
     "runtime-main.js.map": "/static/js/runtime-main.97ad550f.js.map",
     "static/js/2.8de04816.chunk.js": "/static/js/2.8de04816.chunk.js",
@@ -14,13 +14,13 @@
     "static/media/android.8402d4a5.png": "/static/media/android.8402d4a5.png",
     "static/media/ios.fa603df2.svg": "/static/media/ios.fa603df2.svg",
     "static/media/left-vector.5e3bb700.svg": "/static/media/left-vector.5e3bb700.svg",
-    "static/media/logo_full.031d3a5d.png": "/static/media/logo_full.031d3a5d.png",
+    "static/media/logo_full.282df42b.jpg": "/static/media/logo_full.282df42b.jpg",
     "static/media/right-vector.ebadd29e.svg": "/static/media/right-vector.ebadd29e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.97ad550f.js",
     "static/js/2.8de04816.chunk.js",
     "static/css/main.c4fce525.chunk.css",
-    "static/js/main.8fb62a56.chunk.js"
+    "static/js/main.8a08caae.chunk.js"
   ]
 }
