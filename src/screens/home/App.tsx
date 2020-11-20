@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/images/logo/logo_full.jpg';
+import logo from '../../assets/images/logo/logo_full.png';
 import './App.scss';
 import {Message} from "../../components/message/Message";
 import {Button} from "../../components/button/Button";
